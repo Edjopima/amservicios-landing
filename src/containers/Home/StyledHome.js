@@ -5,6 +5,7 @@ const StyledHome = styled.div`
   flex-direction:row;
   justify-content:center;
   align-items:center;
+  color:#212449;
   p{
     text-align:justify;
     width:80%;
@@ -15,7 +16,6 @@ const StyledHome = styled.div`
   .Home-left {
     width:50%;
     padding-left:40px;
-    color:#808080;
   }
   .Home-right {
     width:50%;

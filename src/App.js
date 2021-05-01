@@ -6,9 +6,9 @@ import {
 } from "react-router-dom";
 import Header from './components/Header/Header'
 import Home from './containers/Home/Home'
+import About from './containers/About/About'
 
 const Contact = () => <h1>Contact</h1>
-const About = () => <h1>About</h1>
 
 const App = () => {
   return (

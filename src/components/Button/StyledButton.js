@@ -7,7 +7,7 @@ const StyledButton = styled.div`
   width: 250px;
   cursor: pointer;
   margin: 20px;
-  color: #114084;
+  color:#265460;
   transition: all 0.3s;
   position: relative;
 
@@ -28,8 +28,8 @@ const StyledButton = styled.div`
     border-bottom-width: 1px;
     border-top-style: solid;
     border-bottom-style: solid;
-    border-top-color: rgba(17, 64, 132,0.5);
-    border-bottom-color: rgba(17, 64, 132,0.5);
+    border-top-color: rgba(38, 84, 96,0.5);
+    border-bottom-color: rgba(38, 84, 96,0.5);
     transform: scale(0.1, 1);
   }
   .btn1:hover span {
@@ -48,7 +48,7 @@ const StyledButton = styled.div`
     height: 100%;
     z-index: 1;
     transition: all 0.3s;
-    background-color: rgba(17, 64, 132,0.1);
+    background-color: rgba(38, 84, 96,0.1);
   }
   .btn1:hover::after {
     opacity: 0;
@@ -72,8 +72,8 @@ const StyledButton = styled.div`
     border-bottom-width: 1px;
     border-top-style: solid;
     border-bottom-style: solid;
-    border-top-color: rgba(17, 64, 132,0.5);
-    border-bottom-color: rgba(17, 64, 132,0.5);
+    border-top-color: rgba(38, 84, 96,0.5);
+    border-bottom-color: rgba(38, 84, 96,0.5);
     transform: scale(0.1, 1);
   }
   .btn2:hover span {
