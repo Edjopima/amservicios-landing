@@ -7,8 +7,8 @@ import {
 import Header from './components/Header/Header'
 import Home from './containers/Home/Home'
 import About from './containers/About/About'
-
-const Contact = () => <h1>Contact</h1>
+import Contact from './containers/Contact/Contact'
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   return (
@@ -28,6 +28,7 @@ const App = () => {
           component={Home}
         />
       </Switch>
+      <Footer/>
     </Router>
   );
 }
