@@ -1,27 +1,21 @@
 import React from 'react';
 import StyledAbout from './StyledAbout';
+import {useSpring, animated} from 'react-spring';
+import logo from '../../logo.jfif'
 
 const About = () => {
+  const props = useSpring({ to: { opacity: 1 }, from: { opacity: 0 }, delay: 200 })
+
   return (
-    <StyledAbout>
-      <div className = 'About-textBox quienes-somos'>
-        <h1 className = 'About-title'>¿Quienes somos?</h1>
-        <p>Somos una empresa que nace con el propósito de ofrecer un alto 
-        nivel profesional en la prestación de servicios múltiples, en el área 
-        de buceo Industrial, conexiones, transporte lacustre, transporte terrestre, obras civiles y servicios en general, adicionalmente ofrecer al 
-        mercado los mejores equipos, instrumentos e insumos, para todo lo 
-        relacionado al buceo industrial, comprometidos a ser líderes de la 
-        tecnología en nuestro ramo, a fines de proveer al cliente la mejor 
-        calidad y el mejor servicio.</p>
+    <animated.div style={props}>
+<StyledAbout>
+      <div className = 'About-contentBox'>
+        <img src={logo} style={{width:'150px',height:'150px', marginTop:'20px'}}/>
+        <h1 className = 'About-title'>A&M SERVICIOS C.A</h1>
       </div>
-      <div className = 'About-galery galeria-1'>
-        <div className='img'></div>
-        <div className='img'></div>
-        <div className='img'></div>
-        <div className='img'></div>
-      </div>
-      <div className = 'About-textBox Mision'>
-        <h1 className = 'About-title'>Mision</h1>
+      <div className='About-textContainer'>
+      <div className = 'About-textBox'>
+        <h1 className = 'About-subTitle'>Mision</h1>
         <p>Mantenerse como empresa de servicios 
         integrados de alta calidad para la industria 
         con una alta rentabilidad y competitividad 
@@ -32,8 +26,8 @@ const About = () => {
         públicos, garantizando la seguridad, integridad y bienestar a nuestros trabajadores y 
         el medio ambiente.</p>
       </div>
-      <div className = 'About-textBox vision'>
-        <h1 className = 'About-title'>Vision</h1>
+      <div className = 'About-textBox'>
+        <h1 className = 'About-subTitle'>Vision</h1>
         <p>Ser una organización modelo de avanzada 
         en función de contribuir a mejorar el proceso 
         de transformación en lo relacionado a las 
@@ -44,15 +38,19 @@ const About = () => {
         alta calidad, la atención y el respeto a las 
         normativas que nos rigen. </p>
       </div>
-      <div className = 'About-galery Galeria-2'>
-        <div className='img'></div>
-        <div className='img'></div>
-        <div className='img'></div>
-        <div className='img'></div>
       </div>
-      <div className='About-textContainer Valores'>
-        <h1 className = 'About-title valores-title'>Nuestros Valores</h1>
-        <div className = 'About-textBox valor1'>
+      <div className='About-textContainer'>
+        <h1 className = 'About-title'>Servicios</h1>
+        <div className='About-itemBox'>Servicio de alquiler de lancha de buceo industrial.</div>
+        <div className='About-itemBox'>Servicio integral de alquiler de lancha de conexiones.</div>
+        <div className='About-itemBox'>Servicio integral de alquiler de lancha de transporte de pasajeros.</div>
+        <div className='About-itemBox'>Reparación y Mantenimiento de Unidades Lacustres.</div>
+        <div className='About-itemBox'>Servicio de mantenimiento a equipos de buceo.</div>
+        <div className='About-itemBox'>Suministro de equipos, instrumentos e insumos de buceo</div>
+      </div>
+      <div className='About-textContainer'>
+        <h1 className = 'About-title'>Nuestros Valores</h1>
+        <div className = 'About-textBox'>
           <h1 className = 'About-subtitle'>Puntualidad</h1>
           <p>Somos conocedores de la exactitud 
           de las operaciones marítimas donde 
@@ -63,7 +61,7 @@ const About = () => {
           aspecto, pues una nave necesita 
           suplir su necesidad justo a tiempo.</p>
         </div>
-        <div className = 'About-textBox valor2'>
+        <div className = 'About-textBox'>
           <h1 className = 'About-subtitle'>Calidad</h1>
           <p>Contamos con una vasta experiencia en todas las actividades 
           maritimas y portuarias, aspecto 
@@ -77,7 +75,7 @@ const About = () => {
           parametros y controles de calidad darán como resultado un 
           excelente servicio.</p>
         </div>
-        <div className = 'About-textBox valor3'>
+        <div className = 'About-textBox'>
           <h1 className = 'About-subtitle'>Protección</h1>
           <p>La experiencia adquirida durante los 
           largos años de trabajo aportando al 
@@ -91,7 +89,7 @@ const About = () => {
           aspecto que nos permite implementar medidas de mitigación contundentes, contra los principales 
           flagelos que afectan.</p>
         </div>
-        <div className = 'About-textBox valor4'>
+        <div className = 'About-textBox'>
           <h1 className = 'About-subtitle'>Ahorro</h1>
           <p>Los análisis de mercado realizados, asi como el conocimiento 
           historico de la región y sus 
@@ -100,7 +98,7 @@ const About = () => {
           relación calidad-precio, seleccionando el proveedor con las 
           mejores condiciones.</p>
         </div>
-        <div className = 'About-textBox valor5'>
+        <div className = 'About-textBox'>
           <h1 className = 'About-subtitle'>Seguridad</h1>
           <p>Contamos con un sistema de 
           gestión de seguridad estructurado 
@@ -113,6 +111,7 @@ const About = () => {
         </div>
       </div>
     </StyledAbout>
+    </animated.div>
   );
 }
 

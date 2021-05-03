@@ -1,8 +1,12 @@
 import React from 'react';
 import StyledContact from './StyledContact';
+import {useSpring, animated} from 'react-spring';
 
 const Contact = () => {
+    const props = useSpring({ to: { opacity: 1 }, from: { opacity: 0 }, delay: 200 })
+
     return (
+        <animated.div style={props}>
         <StyledContact>
             <h1 className='Contact-title'>Contactanos</h1>
             <div className='Contact-content'>
@@ -34,6 +38,7 @@ const Contact = () => {
                 </div>
             </div>
         </StyledContact>
+        </animated.div>
     );
 }
 

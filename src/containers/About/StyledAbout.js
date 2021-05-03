@@ -2,25 +2,37 @@ import styled from 'styled-components';
 
 const StyledAbout = styled.div`
   color:#212449;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "quienes-somos quienes-somos"
-    "galeria-1 galeria-1"
-    "Mision vision"
-    "Galeria-2 Galeria-2"
-    "Valores Valores";
-
-  .quienes-somos { grid-area: quienes-somos; }
-  .galeria-1 { grid-area: galeria-1; }
-  .Mision { grid-area: Mision; }
-  .vision { grid-area: vision; }
-  .Galeria-2 { grid-area: Galeria-2; }
-  .Valores { grid-area: Valores; }
 
   .About-textBox {
+    width:400px;
+    height:350px;
+    padding: 20px 60px;
+    text-align:center;
+    font-size: 18px;
+    border-radius:15px;
+    background-color: rgba(38, 84, 96,0.05);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin:30px 60px;
+  }
+  .About-itemBox {
+    width:175px;
+    height:150px;
+    padding: 20px 60px;
+    text-align:center;
+    font-size: 18px;
+    border-radius:15px;
+    background-color: rgba(38, 84, 96,0.05);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin:30px 60px;
+    font-weight:bold;
+  }
+  .About-contentBox{
     padding: 20px 60px;
     text-align:center;
     font-size: 18px;
@@ -44,20 +56,6 @@ const StyledAbout = styled.div`
     background-color:lightgray;
   }
   .About-textContainer{
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-      "valores-title valores-title valores-title"
-      "valor1 valor2 valor3"
-      "valor4 valor5 .";
-    .valores-title { grid-area: valores-title; }
-    .valor1 { grid-area: valor1; }
-    .valor2 { grid-area: valor2; }
-    .valor3 { grid-area: valor3; }
-    .valor4 { grid-area: valor4; }
-    .valor5 { grid-area: valor5; } */
     width:100%;
     display:flex;
     flex-direction:row;
@@ -67,11 +65,6 @@ const StyledAbout = styled.div`
   }
   .About-textContainer .About-title {
     width:100%;
-  }
-  .About-textContainer .About-textBox {
-    padding:0;
-    width:40%;
-    margin: 0 60px;
   }
 `;
 
