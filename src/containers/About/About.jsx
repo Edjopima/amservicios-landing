@@ -1,7 +1,7 @@
 import React from 'react';
 import StyledAbout from './StyledAbout';
 import {useSpring, animated} from 'react-spring';
-import logo from '../../logo.jfif'
+import logo from '../../Images/logo.jfif'
 
 const About = () => {
   const props = useSpring({ to: { opacity: 1 }, from: { opacity: 0 }, delay: 200 })
@@ -10,7 +10,7 @@ const About = () => {
     <animated.div style={props}>
 <StyledAbout>
       <div className = 'About-contentBox'>
-        <img src={logo} style={{width:'150px',height:'150px', marginTop:'20px'}}/>
+        <img src={logo} alt='A&M SERVICIOS C.A' style={{width:'150px',height:'150px', marginTop:'20px'}}/>
         <h1 className = 'About-title'>A&M SERVICIOS C.A</h1>
       </div>
       <div className='About-textContainer'>
