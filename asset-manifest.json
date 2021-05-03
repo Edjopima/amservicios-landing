@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/amservicios-landing/static/css/main.0ed8843a.chunk.css",
-    "main.js": "/amservicios-landing/static/js/main.35372b15.chunk.js",
-    "main.js.map": "/amservicios-landing/static/js/main.35372b15.chunk.js.map",
-    "runtime-main.js": "/amservicios-landing/static/js/runtime-main.baf70735.js",
-    "runtime-main.js.map": "/amservicios-landing/static/js/runtime-main.baf70735.js.map",
-    "static/js/2.1b918cbd.chunk.js": "/amservicios-landing/static/js/2.1b918cbd.chunk.js",
-    "static/js/2.1b918cbd.chunk.js.map": "/amservicios-landing/static/js/2.1b918cbd.chunk.js.map",
-    "static/js/3.328cff35.chunk.js": "/amservicios-landing/static/js/3.328cff35.chunk.js",
-    "static/js/3.328cff35.chunk.js.map": "/amservicios-landing/static/js/3.328cff35.chunk.js.map",
-    "index.html": "/amservicios-landing/index.html",
-    "static/css/main.0ed8843a.chunk.css.map": "/amservicios-landing/static/css/main.0ed8843a.chunk.css.map",
-    "static/js/2.1b918cbd.chunk.js.LICENSE.txt": "/amservicios-landing/static/js/2.1b918cbd.chunk.js.LICENSE.txt",
-    "static/media/image.e7894af8.jpg": "/amservicios-landing/static/media/image.e7894af8.jpg",
-    "static/media/logo.c7c1af0f.jfif": "/amservicios-landing/static/media/logo.c7c1af0f.jfif"
+    "main.css": "https://edjopima.github.io/amservicios-landing/static/css/main.0ed8843a.chunk.css",
+    "main.js": "https://edjopima.github.io/amservicios-landing/static/js/main.fcd1678a.chunk.js",
+    "main.js.map": "https://edjopima.github.io/amservicios-landing/static/js/main.fcd1678a.chunk.js.map",
+    "runtime-main.js": "https://edjopima.github.io/amservicios-landing/static/js/runtime-main.e8d6057c.js",
+    "runtime-main.js.map": "https://edjopima.github.io/amservicios-landing/static/js/runtime-main.e8d6057c.js.map",
+    "static/js/2.b0f77875.chunk.js": "https://edjopima.github.io/amservicios-landing/static/js/2.b0f77875.chunk.js",
+    "static/js/2.b0f77875.chunk.js.map": "https://edjopima.github.io/amservicios-landing/static/js/2.b0f77875.chunk.js.map",
+    "static/js/3.328cff35.chunk.js": "https://edjopima.github.io/amservicios-landing/static/js/3.328cff35.chunk.js",
+    "static/js/3.328cff35.chunk.js.map": "https://edjopima.github.io/amservicios-landing/static/js/3.328cff35.chunk.js.map",
+    "index.html": "https://edjopima.github.io/amservicios-landing/index.html",
+    "static/css/main.0ed8843a.chunk.css.map": "https://edjopima.github.io/amservicios-landing/static/css/main.0ed8843a.chunk.css.map",
+    "static/js/2.b0f77875.chunk.js.LICENSE.txt": "https://edjopima.github.io/amservicios-landing/static/js/2.b0f77875.chunk.js.LICENSE.txt",
+    "static/media/image.e7894af8.jpg": "https://edjopima.github.io/amservicios-landing/static/media/image.e7894af8.jpg",
+    "static/media/logo.c7c1af0f.jfif": "https://edjopima.github.io/amservicios-landing/static/media/logo.c7c1af0f.jfif"
   },
   "entrypoints": [
-    "static/js/runtime-main.baf70735.js",
-    "static/js/2.1b918cbd.chunk.js",
+    "static/js/runtime-main.e8d6057c.js",
+    "static/js/2.b0f77875.chunk.js",
     "static/css/main.0ed8843a.chunk.css",
-    "static/js/main.35372b15.chunk.js"
+    "static/js/main.fcd1678a.chunk.js"
   ]
 }
