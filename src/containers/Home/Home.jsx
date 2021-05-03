@@ -3,7 +3,9 @@ import StyledButton from '../../components/Button/StyledButton'
 import StyledHome from './StyledHome';
 import {useSpring, animated} from 'react-spring';
 import { useHistory } from 'react-router-dom';
-import image from '../../image.jpg'
+import image from '../../Images/image.jpg'
+import logo from '../../Images/logo.jfif'
+
 
 const Home = () => {
   const history = useHistory();
@@ -15,6 +17,7 @@ const Home = () => {
     <animated.div style={props}>
     <StyledHome>
       <div className='Home-left'>
+        <img src={logo} alt='A&M SERVICIOS C.A' style={{width:'200px',height:'150px', marginTop:'20px'}}/>
         <h1>A&M SERVICIOS C.A</h1>
         <p>Somos una empresa que nace con el propósito de ofrecer un alto 
         nivel profesional en la prestación de servicios múltiples, en el área 
@@ -33,7 +36,7 @@ const Home = () => {
         </div>
       </div>
       <div className='Home-right'>
-      <img src={image} style={{width:'100%',height:'100%'}}/>
+      <img src={image} alt='' style={{width:'100%',height:'100%'}}/>
       </div>
     </StyledHome>
     </animated.div>
