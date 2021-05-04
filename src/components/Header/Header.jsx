@@ -14,7 +14,7 @@ const Header = () => {
         <p onClick={()=>{changeRoute('home')}}>A&M SERVICIOS C.A</p>
       </div>
       <div className='Header-options'>
-      <p onClick={()=>{changeRoute('about')}}>¿QUINES SOMOS?</p>
+      <p onClick={()=>{changeRoute('about')}}>¿QUIENES SOMOS?</p>
         <p onClick={()=>{changeRoute('contact')}}>CONTACTANOS</p>
       </div>
     </StyledHeader>
