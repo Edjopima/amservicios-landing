@@ -15,9 +15,9 @@ const Home = () => {
   const props = useSpring({ to: { opacity: 1 }, from: { opacity: 0 }, delay: 200 })
   return (
     <animated.div style={props}>
-    <StyledHome>
+    <StyledHome backgroundImage={image} >
       <div className='Home-left'>
-        <img src={logo} alt='A&M SERVICIOS C.A' style={{width:'200px',height:'150px', marginTop:'20px'}}/>
+        <img src={logo} alt='A&M SERVICIOS C.A' className='Logo'/>
         <h1>A&M SERVICIOS C.A</h1>
         <p>Somos una empresa que nace con el propósito de ofrecer un alto 
         nivel profesional en la prestación de servicios múltiples, en el área 

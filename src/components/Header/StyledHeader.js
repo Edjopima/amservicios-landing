@@ -30,6 +30,15 @@ const StyledHeader = styled.div`
     margin:0 20px;
     cursor: pointer;
   }
+  @media screen and (max-width: 480px) {
+  font-size: 0.8em;
+  .Header-logo {
+    padding-left: 20px;
+  }
+  p {
+    margin:0 10px;
+  }
+  }
 `
 
 export default StyledHeader;

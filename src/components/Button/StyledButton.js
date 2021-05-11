@@ -83,6 +83,11 @@ const StyledButton = styled.div`
     opacity: 1;
     transform: scale(1, 1);
   }
+  @media screen and (max-width: 480px) {
+    height: 50px;
+    width: 200px;
+    margin:10px;
+  }
 `
 
 export default StyledButton;
