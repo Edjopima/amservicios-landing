@@ -3,13 +3,18 @@ import styled from 'styled-components';
 const StyledContact = styled.div`
   color:#212449;
   height:80vh;
+  background-image:url(${props=>props.backgroundImage});
+  .Contact-container {
+    background-color: rgba(255, 255, 255,0.9);
+    height:80vh;
+  }
   .Contact-title {
     text-align: center;
     font-size:2.5rem;
   }
   .Contact-subtitle {
     text-align: center;
-    font-size:2rem;
+    font-size:1.5rem;
   }
   .Contact-content{
     display: flex;
@@ -38,8 +43,8 @@ const StyledContact = styled.div`
       font-size:2rem;
       text-align: center;
     }
-    .Contact-subtitle {
-      font-size:1.5rem;
+    .Contact-subTitle {
+      font-size:1.6rem;
       text-align: center;
     }
     .Contact-content{
@@ -49,7 +54,7 @@ const StyledContact = styled.div`
       justify-content: center;
       align-items: center;
       text-align: center;
-      background-color: rgba(38, 84, 96,0.05);
+      background-color: rgba(38, 84, 96,0.1);
       margin:0 40px;
       border-radius:15px;
     }
