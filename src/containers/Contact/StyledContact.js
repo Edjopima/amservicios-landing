@@ -48,7 +48,7 @@ const StyledContact = styled.div`
     width:170px;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 550px) {
     .Contact-title {
       font-size:2rem;
       text-align: center;

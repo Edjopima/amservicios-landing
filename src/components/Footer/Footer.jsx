@@ -10,7 +10,7 @@ const StyledFooter = styled.div`
     padding-top:2px;
     text-align:center;
     border-top:1px solid rgba(33, 36, 73, 0.3);
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 500px) {
         padding:0;
     }
 `;

@@ -31,7 +31,7 @@ const StyledHome = styled.div`
     display:flex;
     flex-direction:row;
   }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     background-image:url(${props=>props.backgroundImage});
     .Home-right{display:none}
     .Home-left {

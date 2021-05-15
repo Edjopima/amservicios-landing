@@ -74,7 +74,7 @@ const StyledAbout = styled.div`
   .About-textContainer .About-title {
     width:100%;
   }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 550px) {
     .About-title {
       font-size:2rem;
     }
