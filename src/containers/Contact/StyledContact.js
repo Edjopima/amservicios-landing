@@ -37,6 +37,16 @@ const StyledContact = styled.div`
     width:30px;
     height:30px;
   }
+  a{
+    text-transform:uppercase;
+    text-decoration:none;
+    color:#212449;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-around;
+    width:170px;
+  }
 
   @media screen and (max-width: 480px) {
     .Contact-title {
@@ -61,7 +71,13 @@ const StyledContact = styled.div`
 
     .Contact-separator{
       display:none;
+      margin:0;
+      padding:0;
     }
+    a{
+    margin-left:25px;
+    padding:0;
+  }
   }
 `;
 

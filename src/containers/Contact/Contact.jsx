@@ -32,8 +32,11 @@ const Contact = () => {
                         <div className='Contact-separator'></div>
                         <div className='Contact-contentContainer'>
                             <div className='Contact-textBox'>
-                            <h1 className='Contact-subTitle'>Redes Sociales</h1>
-                            <img src={instagram} className='socialLogo' alt='instagram'/>
+                                <h1 className='Contact-subTitle'>Redes Sociales</h1>
+                                <a href='https://www.instagram.com/amcaservicios/'> 
+                                    <img className="socialLogo" src={instagram} alt="Instagram" target="_blank" rel="noreferrer"/>
+                                    <span>amcaservicios</span>
+                                </a>
                             </div>
                             <div className='Contact-textBox'>
                                 <h1 className='Contact-subTitle'>Correo Electronico</h1>
