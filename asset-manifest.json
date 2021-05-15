@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/amservicios-landing/static/css/main.0ed8843a.chunk.css",
-    "main.js": "/amservicios-landing/static/js/main.b4099d04.chunk.js",
-    "main.js.map": "/amservicios-landing/static/js/main.b4099d04.chunk.js.map",
+    "main.js": "/amservicios-landing/static/js/main.d3be41a5.chunk.js",
+    "main.js.map": "/amservicios-landing/static/js/main.d3be41a5.chunk.js.map",
     "runtime-main.js": "/amservicios-landing/static/js/runtime-main.baf70735.js",
     "runtime-main.js.map": "/amservicios-landing/static/js/runtime-main.baf70735.js.map",
     "static/js/2.904b2447.chunk.js": "/amservicios-landing/static/js/2.904b2447.chunk.js",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.baf70735.js",
     "static/js/2.904b2447.chunk.js",
     "static/css/main.0ed8843a.chunk.css",
-    "static/js/main.b4099d04.chunk.js"
+    "static/js/main.d3be41a5.chunk.js"
   ]
 }
