@@ -1,6 +1,7 @@
 import React from 'react';
 import StyledContact from './StyledContact';
 import {useSpring, animated} from 'react-spring';
+import instagram from '../../Images/instagram.svg'
 
 const Contact = () => {
     const props = useSpring({ to: { opacity: 1 }, from: { opacity: 0 }, delay: 200 })
@@ -30,6 +31,7 @@ const Contact = () => {
                 <div className='Contact-contentContainer'>
                     <div className='Contact-textBox'>
                     <h1 className='Contact-subTitle'>Redes Sociales</h1>
+                    <img src={instagram} className='socialLogo' alt='instagram'/>
                     </div>
                     <div className='Contact-textBox'>
                         <h1 className='Contact-subTitle'>Correo Electronico</h1>
