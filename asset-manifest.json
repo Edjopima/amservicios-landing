@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/amservicios-landing/static/css/main.0ed8843a.chunk.css",
-    "main.js": "/amservicios-landing/static/js/main.571aa890.chunk.js",
-    "main.js.map": "/amservicios-landing/static/js/main.571aa890.chunk.js.map",
+    "main.js": "/amservicios-landing/static/js/main.b4099d04.chunk.js",
+    "main.js.map": "/amservicios-landing/static/js/main.b4099d04.chunk.js.map",
     "runtime-main.js": "/amservicios-landing/static/js/runtime-main.baf70735.js",
     "runtime-main.js.map": "/amservicios-landing/static/js/runtime-main.baf70735.js.map",
     "static/js/2.904b2447.chunk.js": "/amservicios-landing/static/js/2.904b2447.chunk.js",
@@ -13,12 +13,13 @@
     "static/css/main.0ed8843a.chunk.css.map": "/amservicios-landing/static/css/main.0ed8843a.chunk.css.map",
     "static/js/2.904b2447.chunk.js.LICENSE.txt": "/amservicios-landing/static/js/2.904b2447.chunk.js.LICENSE.txt",
     "static/media/image.e7894af8.jpg": "/amservicios-landing/static/media/image.e7894af8.jpg",
+    "static/media/instagram.5a3da102.svg": "/amservicios-landing/static/media/instagram.5a3da102.svg",
     "static/media/logo.c7c1af0f.jfif": "/amservicios-landing/static/media/logo.c7c1af0f.jfif"
   },
   "entrypoints": [
     "static/js/runtime-main.baf70735.js",
     "static/js/2.904b2447.chunk.js",
     "static/css/main.0ed8843a.chunk.css",
-    "static/js/main.571aa890.chunk.js"
+    "static/js/main.b4099d04.chunk.js"
   ]
 }
