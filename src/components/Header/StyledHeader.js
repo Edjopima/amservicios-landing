@@ -12,6 +12,7 @@ const StyledHeader = styled.div`
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 5;
   .Header-logo {
     width: 25%;
     display: flex;

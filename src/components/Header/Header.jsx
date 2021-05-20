@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <StyledHeader>
       <div className='Header-logo'>
-        <p onClick={()=>{changeRoute('home')}}>A&M SERVICIOS C.A</p>
+        <p onClick={()=>{changeRoute('')}}>A&M SERVICIOS C.A</p>
       </div>
       <div className='Header-options'>
       <p onClick={()=>{changeRoute('about')}}>¿QUIENES SOMOS?</p>

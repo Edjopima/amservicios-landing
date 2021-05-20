@@ -3,10 +3,57 @@ import StyledAbout from './StyledAbout';
 import {useSpring, animated} from 'react-spring';
 import logo from '../../Images/logo.jfif'
 import image from '../../Images/image.jpg'
+import ImageGallery from 'react-image-gallery';
+import image1 from '../../Images/gallery/1.jpg'
+import image2 from '../../Images/gallery/2.jpg'
+import image3 from '../../Images/gallery/3.jpg'
+import image4 from '../../Images/gallery/4.jpg'
+import image5 from '../../Images/gallery/5.jpg'
+import image6 from '../../Images/gallery/6.jpg'
+import image7 from '../../Images/gallery/7.jpg'
+import image8 from '../../Images/gallery/8.jpg'
+import image9 from '../../Images/gallery/9.jpg'
 
 const About = () => {
   const props = useSpring({ to: { opacity: 1 }, from: { opacity: 0 }, delay: 200 })
-
+  const images = [
+    {
+      original: image1,
+      thumbnail: image1,
+    },
+    {
+      original: image2,
+      thumbnail: image3,
+    },
+    {
+      original: image3,
+      thumbnail: image3,
+    },
+    {
+      original: image4,
+      thumbnail: image4,
+    },
+    {
+      original: image5,
+      thumbnail: image5,
+    },
+    {
+      original: image6,
+      thumbnail: image6,
+    },
+    {
+      original: image7,
+      thumbnail: image7,
+    },
+    {
+      original: image8,
+      thumbnail: image8,
+    },
+    {
+      original: image9,
+      thumbnail: image9,
+    },
+  ];
   return (
     <animated.div style={props}>
       <StyledAbout backgroundImage={image}>
@@ -49,6 +96,9 @@ const About = () => {
             <div className='About-itemBox'>Reparación y Mantenimiento de Unidades Lacustres.</div>
             <div className='About-itemBox'>Servicio de mantenimiento a equipos de buceo.</div>
             <div className='About-itemBox'>Suministro de equipos, instrumentos e insumos de buceo</div>
+          </div>
+          <div className='About-galeryContainer'>
+            {images.length===0?<div></div>:<ImageGallery items={images}/>}
           </div>
           <div className='About-textContainer'>
             <h1 className = 'About-title'>Nuestros Valores</h1>

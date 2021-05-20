@@ -5,6 +5,9 @@ const StyledAbout = styled.div`
   background-image:url(${props=>props.backgroundImage});
   .About-container {
     background-color: rgba(255, 255, 255,0.9);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
   }
   .Logo{
     width:200px;
@@ -74,6 +77,11 @@ const StyledAbout = styled.div`
   .About-textContainer .About-title {
     width:100%;
   }
+  .About-galeryContainer{
+    width:400px;
+    height:60vh;
+    margin:40px 0;
+  }
   @media screen and (max-width: 550px) {
     .About-title {
       font-size:2rem;
@@ -110,6 +118,11 @@ const StyledAbout = styled.div`
     .About-subtitle {
       font-size:2em;
     }
+    .About-galeryContainer{
+    width:400px;
+    height:60vh;
+    margin:40px 0;
+  }
   }
 `;
 

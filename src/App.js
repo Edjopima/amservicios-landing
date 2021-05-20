@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {
   Switch,
   Route
@@ -10,6 +10,22 @@ import Contact from './containers/Contact/Contact'
 import Footer from './components/Footer/Footer';
 
 const App = () => {
+  const [images,setImages]=useState([]);
+
+  useEffect(() => async () => {
+    console.log('useEffect');
+    const response = await fetch('https://rickandmortyapi.com/api/character/?page=19');
+    const data = await response.json();
+    const imageList = data.results.map((item)=>{
+      const image = {
+        original:item.image,
+        thumbnail:item.image,
+      }
+      return image;
+    });
+    console.log(imageList);
+    setImages(imageList);
+  },[])
   return (
     <>
         <Header />
@@ -20,8 +36,9 @@ const App = () => {
             />
             <Route
               path="/about"
-              component={About}
-            />
+            >
+              <About images={images} />
+            </Route>
             <Route
               path="/"
               component={Home}
