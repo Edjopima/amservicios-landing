@@ -78,8 +78,7 @@ const StyledAbout = styled.div`
     width:100%;
   }
   .About-galeryContainer{
-    width:400px;
-    height:60vh;
+    width:350px;
     margin:40px 0;
   }
   @media screen and (max-width: 550px) {
@@ -120,7 +119,7 @@ const StyledAbout = styled.div`
     }
     .About-galeryContainer{
     width:400px;
-    height:60vh;
+    height:50vh;
     margin:40px 0;
   }
   }
