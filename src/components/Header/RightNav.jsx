@@ -3,11 +3,13 @@ import styled from 'styled-components';
 import { useHistory } from "react-router-dom";
 
 const Ul = styled.ul`
+  padding-right: 30px;
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
   li {
     padding: 18px 10px;
+    cursor: pointer;
   }
   @media (max-width: 768px) {
     flex-flow: column nowrap;

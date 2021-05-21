@@ -20,13 +20,6 @@ const StyledHeader = styled.div`
     justify-content: flex-start;
     padding-left: 30px;
   }
-  .Header-options {
-    width:75%;
-    display:flex;
-    flex-direction:row;
-    justify-content: flex-end;
-    padding-right: 30px;
-  }
   @media screen and (max-width: 550px) {
     font-size: 0.8em;
     .Header-logo {

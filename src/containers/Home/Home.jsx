@@ -35,9 +35,9 @@ const Home = () => {
           </StyledButton>
         </div>
       </div>
-      <div className='Home-right'>
+      {/* <div className='Home-right'>
       <img src={image} alt='' style={{width:'100%',height:'100%'}}/>
-      </div>
+      </div> */}
     </StyledHome>
     </animated.div>
 
