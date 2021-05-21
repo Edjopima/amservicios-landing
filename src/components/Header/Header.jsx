@@ -1,6 +1,7 @@
 import React from 'react';
 import StyledHeader from './StyledHeader';
 import { useHistory } from "react-router-dom";
+import Burger from './Burger';
 
 const Header = () => {
   const history = useHistory();
@@ -13,10 +14,7 @@ const Header = () => {
       <div className='Header-logo'>
         <p onClick={()=>{changeRoute('')}}>A&M SERVICIOS C.A</p>
       </div>
-      <div className='Header-options'>
-      <p onClick={()=>{changeRoute('about')}}>¿QUIENES SOMOS?</p>
-        <p onClick={()=>{changeRoute('contact')}}>CONTACTANOS</p>
-      </div>
+      <Burger />
     </StyledHeader>
   );
 }

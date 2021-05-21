@@ -21,7 +21,7 @@ const StyledAbout = styled.div`
     text-align:center;
     font-size: 18px;
     border-radius:15px;
-    background-color: rgba(38, 84, 96,0.1);
+    background-color: rgba(0, 51, 153,0.1);
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -35,7 +35,7 @@ const StyledAbout = styled.div`
     text-align:center;
     font-size: 18px;
     border-radius:15px;
-    background-color: rgba(38, 84, 96,0.05);
+    background-color: rgba(0, 51, 153,0.05);
     display:flex;
     flex-direction:column;
     justify-content:center;
