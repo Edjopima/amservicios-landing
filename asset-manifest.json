@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/amservicios-landing/static/css/main.172143a1.chunk.css",
-    "main.js": "/amservicios-landing/static/js/main.d4d48e49.chunk.js",
-    "main.js.map": "/amservicios-landing/static/js/main.d4d48e49.chunk.js.map",
-    "runtime-main.js": "/amservicios-landing/static/js/runtime-main.cccc49ab.js",
-    "runtime-main.js.map": "/amservicios-landing/static/js/runtime-main.cccc49ab.js.map",
+    "main.js": "/amservicios-landing/static/js/main.cd894e5e.chunk.js",
+    "main.js.map": "/amservicios-landing/static/js/main.cd894e5e.chunk.js.map",
+    "runtime-main.js": "/amservicios-landing/static/js/runtime-main.3565b851.js",
+    "runtime-main.js.map": "/amservicios-landing/static/js/runtime-main.3565b851.js.map",
     "static/css/2.0adfe8f7.chunk.css": "/amservicios-landing/static/css/2.0adfe8f7.chunk.css",
-    "static/js/2.a47a6b59.chunk.js": "/amservicios-landing/static/js/2.a47a6b59.chunk.js",
-    "static/js/2.a47a6b59.chunk.js.map": "/amservicios-landing/static/js/2.a47a6b59.chunk.js.map",
-    "static/js/3.2a8d585d.chunk.js": "/amservicios-landing/static/js/3.2a8d585d.chunk.js",
-    "static/js/3.2a8d585d.chunk.js.map": "/amservicios-landing/static/js/3.2a8d585d.chunk.js.map",
+    "static/js/2.23d12f13.chunk.js": "/amservicios-landing/static/js/2.23d12f13.chunk.js",
+    "static/js/2.23d12f13.chunk.js.map": "/amservicios-landing/static/js/2.23d12f13.chunk.js.map",
+    "static/js/3.aff2dab1.chunk.js": "/amservicios-landing/static/js/3.aff2dab1.chunk.js",
+    "static/js/3.aff2dab1.chunk.js.map": "/amservicios-landing/static/js/3.aff2dab1.chunk.js.map",
     "index.html": "/amservicios-landing/index.html",
     "static/css/2.0adfe8f7.chunk.css.map": "/amservicios-landing/static/css/2.0adfe8f7.chunk.css.map",
     "static/css/main.172143a1.chunk.css.map": "/amservicios-landing/static/css/main.172143a1.chunk.css.map",
-    "static/js/2.a47a6b59.chunk.js.LICENSE.txt": "/amservicios-landing/static/js/2.a47a6b59.chunk.js.LICENSE.txt",
+    "static/js/2.23d12f13.chunk.js.LICENSE.txt": "/amservicios-landing/static/js/2.23d12f13.chunk.js.LICENSE.txt",
     "static/media/1.f44eb916.jpg": "/amservicios-landing/static/media/1.f44eb916.jpg",
     "static/media/2.b069ab23.jpg": "/amservicios-landing/static/media/2.b069ab23.jpg",
     "static/media/3.e1a2f77a.jpg": "/amservicios-landing/static/media/3.e1a2f77a.jpg",
@@ -28,10 +28,10 @@
     "static/media/logo.c7c1af0f.jfif": "/amservicios-landing/static/media/logo.c7c1af0f.jfif"
   },
   "entrypoints": [
-    "static/js/runtime-main.cccc49ab.js",
+    "static/js/runtime-main.3565b851.js",
     "static/css/2.0adfe8f7.chunk.css",
-    "static/js/2.a47a6b59.chunk.js",
+    "static/js/2.23d12f13.chunk.js",
     "static/css/main.172143a1.chunk.css",
-    "static/js/main.d4d48e49.chunk.js"
+    "static/js/main.cd894e5e.chunk.js"
   ]
 }
