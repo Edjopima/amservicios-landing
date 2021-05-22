@@ -8,17 +8,16 @@ import {Dropbox} from 'dropbox'
 const DocumentCard = ({title, path}) => {
   const [url, setUrl] = useState('');
 
-  const ACCESS_TOKEN = process.env.REACT_APP_DROPBOX_ACCESS_TOKEN;
-  const dbx=new Dropbox({accessToken: ACCESS_TOKEN})
-
-  const getUrl = (path) => {
-    dbx.filesGetTemporaryLink({path:path})
-    .then(response=>setUrl(response.result.link))
-    .catch(err=>console.log(err))
-  };
   useEffect(()=>{
+    const ACCESS_TOKEN = process.env.REACT_APP_DROPBOX_ACCESS_TOKEN;
+    const dbx=new Dropbox({accessToken: ACCESS_TOKEN})
+    const getUrl = (path) => {
+      dbx.filesGetTemporaryLink({path:path})
+      .then(response=>setUrl(response.result.link))
+      .catch(err=>console.log(err))
+    };
     getUrl(path)
-  }, []);
+  }, [path]);
 
   return (
     <StyledDocumentCard>

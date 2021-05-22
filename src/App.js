@@ -14,24 +14,23 @@ import Footer from './components/Footer/Footer';
 import DocumentsPage from './containers/DocumentsPage/DocumentsPage';
 
 const App = () => {
-  const ACCESS_TOKEN = process.env.REACT_APP_DROPBOX_ACCESS_TOKEN;
-  const dbx=new Dropbox({accessToken: ACCESS_TOKEN})
-
   const [documents, setDocuments] = useState([])
 
-  const filterDocuments = (documents) =>{
-    const filteredDocuments = [];
-    for (let i = 0; i < documents.length ; i++) {
-      const element = {
-        title: documents[i].name,
-        path: documents[i].path_display,
-      }
-      filteredDocuments.push(element);
-    }
-    return filteredDocuments;
-  }
-
   useEffect(() =>{
+    const ACCESS_TOKEN = process.env.REACT_APP_DROPBOX_ACCESS_TOKEN;
+    const dbx=new Dropbox({accessToken: ACCESS_TOKEN})
+    const filterDocuments = (documents) =>{
+      const filteredDocuments = [];
+      for (let i = 0; i < documents.length ; i++) {
+        const element = {
+          title: documents[i].name,
+          path: documents[i].path_display,
+        }
+        filteredDocuments.push(element);
+      }
+      return filteredDocuments;
+    }
+
     dbx.filesListFolder({path: '/Solvencias'})
     .then(response=>setDocuments(filterDocuments(response.result.entries)))
     .catch(err=>console.log(err))
