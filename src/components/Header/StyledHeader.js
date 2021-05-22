@@ -19,6 +19,7 @@ const StyledHeader = styled.div`
     flex-direction: row;
     justify-content: flex-start;
     padding-left: 30px;
+    cursor: pointer;
   }
   @media screen and (max-width: 550px) {
     font-size: 0.8em;

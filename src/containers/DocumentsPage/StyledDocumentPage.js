@@ -27,6 +27,9 @@ const StyledDocumentPage = styled.div`
     font-size:3em;
     width: 100%;
   }
+  @media screen and (max-width: 550px) {
+    height: max-content;
+  }
 `;
 
 export default StyledDocumentPage;
