@@ -36,19 +36,6 @@ const StyledHome = styled.div`
     flex-direction:row;
   }
   @media screen and (max-width: 600px) {
-    /* background-image:url(${props=>props.backgroundImage});
-    .Home-right{display:none}
-    .Home-left {
-      padding:0;
-      padding-top:4vh;
-      flex-direction:column;
-      justify-content:center;
-      align-items:center;
-      background-color: rgb(255,255,255,0.8);
-      width:100%;
-      height:85vh;
-      text-align:center;
-    } */
     p{
     text-align:center;
     width:80%;

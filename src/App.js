@@ -8,6 +8,7 @@ import Home from './containers/Home/Home'
 import About from './containers/About/About'
 import Contact from './containers/Contact/Contact'
 import Footer from './components/Footer/Footer';
+import DocumentsPage from './containers/DocumentsPage/DocumentsPage';
 
 const App = () => {
   const [images,setImages]=useState([]);
@@ -34,10 +35,11 @@ const App = () => {
               path="/contact"
               component={Contact}
             />
-            <Route
-              path="/about"
-            >
+            <Route path="/about">
               <About images={images} />
+            </Route>
+            <Route path="/documents">
+              <DocumentsPage />
             </Route>
             <Route
               path="/"
