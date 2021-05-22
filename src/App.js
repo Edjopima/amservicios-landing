@@ -1,8 +1,11 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import {
   Switch,
   Route
 } from "react-router-dom";
+import {Dropbox} from 'dropbox'
+
+//IMPORT COMPONENTS
 import Header from './components/Header/Header'
 import Home from './containers/Home/Home'
 import About from './containers/About/About'
@@ -11,22 +14,29 @@ import Footer from './components/Footer/Footer';
 import DocumentsPage from './containers/DocumentsPage/DocumentsPage';
 
 const App = () => {
-  const [images,setImages]=useState([]);
+  const ACCESS_TOKEN = process.env.REACT_APP_DROPBOX_ACCESS_TOKEN;
+  const dbx=new Dropbox({accessToken: ACCESS_TOKEN})
 
-  useEffect(() => async () => {
-    console.log('useEffect');
-    const response = await fetch('https://rickandmortyapi.com/api/character/?page=19');
-    const data = await response.json();
-    const imageList = data.results.map((item)=>{
-      const image = {
-        original:item.image,
-        thumbnail:item.image,
+  const [documents, setDocuments] = useState([])
+
+  const filterDocuments = (documents) =>{
+    const filteredDocuments = [];
+    for (let i = 0; i < documents.length ; i++) {
+      const element = {
+        title: documents[i].name,
+        path: documents[i].path_display,
       }
-      return image;
-    });
-    console.log(imageList);
-    setImages(imageList);
+      filteredDocuments.push(element);
+    }
+    return filteredDocuments;
+  }
+
+  useEffect(() =>{
+    dbx.filesListFolder({path: '/Solvencias'})
+    .then(response=>setDocuments(filterDocuments(response.result.entries)))
+    .catch(err=>console.log(err))
   },[])
+
   return (
     <>
         <Header />
@@ -36,10 +46,10 @@ const App = () => {
               component={Contact}
             />
             <Route path="/about">
-              <About images={images} />
+              <About />
             </Route>
             <Route path="/documents">
-              <DocumentsPage />
+              <DocumentsPage documents={documents}/>
             </Route>
             <Route
               path="/"

@@ -5,24 +5,25 @@ import {useSpring, animated} from 'react-spring';
 import image from '../../Images/image.jpg'
 
 
-const DocumentsPage = () => {
+const DocumentsPage = ({documents}) => {
   const props = useSpring({ to: { opacity: 1 }, from: { opacity: 0 }, delay: 200 })
-  const documents = [
-    {title:'prueba1', url:'www.google.com'},
-    {title:'prueba2', url:'www.facebook.com'},
-    {title:'prueba3', url:'www.twitter.com'},
-    {title:'prueba4', url:'www.instagram.com'},
-  ]
+  // const documents = [
+  //   {title:'prueba1', url:'www.google.com'},
+  //   {title:'prueba2', url:'www.facebook.com'},
+  //   {title:'prueba3', url:'www.twitter.com'},
+  //   {title:'prueba4', url:'www.instagram.com'},
+  // ]
   return (
     <animated.div style={props}>
       <StyledDocumentPage backgroundImage={image}>
         <div className='container'>
           <h1>Solvencias</h1>
           <div className='documents' >
-            {documents.map(document =>
+            {documents.map((document, index) =>
               <DocumentCard
                 title={document.title}
-                url={document.url}
+                path={document.path}
+                key={index}
               />
             )}
           </div>

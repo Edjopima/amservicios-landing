@@ -16,6 +16,7 @@ const StyledDocumentCard = styled.div`
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    color:#212449;
   }
   .icon{
     font-size: 25px;
